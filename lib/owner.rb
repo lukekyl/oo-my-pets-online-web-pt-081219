@@ -26,5 +26,15 @@ class Owner
   end
   
   #collab methods
-  
+  def self.find_or_create_by_name(name)
+    if self.find(name)
+      self.find(name)
+    else
+      self.create(name)
+  end
+  def self.find(name)
+  end
+  def self.create(name)
+    owner = Owner.new(name)
+  end
 end
