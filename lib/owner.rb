@@ -18,7 +18,7 @@ class Owner
     self.all.length
   end
   def self.reset_all
-    self.all.reset
+    self.all.clear
   end
   def say_species
     p "I am a #{@species}."
