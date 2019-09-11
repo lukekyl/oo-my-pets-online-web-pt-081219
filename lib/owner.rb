@@ -40,7 +40,7 @@ class Owner
     owner = Owner.new(name)
   end
   
-  def self.buy_cat(name)
-    cat.owner = self
-  end
+  # def self.buy_cat(name)
+  #   cat.owner = self
+  # end
 end
