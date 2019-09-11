@@ -8,6 +8,7 @@ class Cat
   end
   def owner_name=(name)
     self.owner = Owner.find_or_create_by_name(name)
+    owner.name
     #owner.buy_cat(self)
     #artist.pets
   end
