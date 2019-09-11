@@ -6,7 +6,7 @@ class Owner
     @name = name
     @species = "human"
   end
-  def say_species
+  def self.say_species
     puts "I am a #{@species}."
   end
   
