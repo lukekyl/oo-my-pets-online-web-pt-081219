@@ -3,6 +3,7 @@ class Owner
   attr_reader :name, :species
   @@all = []
   
+  #in class methods
   def initialize(name)
     @name = name
     @species = "human"
@@ -23,5 +24,7 @@ class Owner
   def say_species
     p "I am a #{@species}."
   end
+  
+  #collab methods
   
 end
