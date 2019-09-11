@@ -1,6 +1,6 @@
 class Owner
-  attr_accessor
-  attr_reader :name, :species
+  attr_accessor :name, :species
+  attr_reader 
   @@all = []
   
   #in class methods
