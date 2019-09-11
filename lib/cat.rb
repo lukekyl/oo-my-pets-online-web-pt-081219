@@ -6,7 +6,7 @@ class Cat
     @name = name 
     self.owner_name(owner)
   end
-  def self.owner_name=(name)
+  def owner_name=(name)
     owner = Owner.find_or_create_by_name(name)
     #owner.add_cat(self)
     #artist.pets
