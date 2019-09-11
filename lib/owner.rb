@@ -34,7 +34,7 @@ class Owner
     end
   end
   def self.find(name)
-    self.detect{|owner| owner.name == name}
+    self.all.detect{|owner| owner.name == name}
   end
   def self.create(name)
     owner = Owner.new(name)
