@@ -4,7 +4,7 @@ class Cat
   
   def initialize(name, owner)
     @name = name 
-    @owner = owner
+    self.owner
   end
   def owner=(name)
     self.owner = Owner.find_or_create_by_name(name)
