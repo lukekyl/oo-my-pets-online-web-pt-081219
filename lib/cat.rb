@@ -4,9 +4,9 @@ class Cat
   
   def initialize(name, owner)
     @name = name 
-    self.owner(owner)
+    self.owner_name(owner)
   end
-  def self.owner=(name)
+  def self.owner_name=(name)
     owner = Owner.find_or_create_by_name(name)
     #owner.add_cat(self)
     #artist.pets
