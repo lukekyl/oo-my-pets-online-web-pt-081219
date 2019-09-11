@@ -8,7 +8,7 @@ class Cat
   end
   def owner=(name)
     self.owner = Artist.find_or_create_by_name(name)
-    owner.add_cat(self)
+    #owner.add_cat(self)
     #artist.pets
   end
   
