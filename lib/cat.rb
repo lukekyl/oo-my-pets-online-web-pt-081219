@@ -4,10 +4,10 @@ class Cat
   
   def initialize(name, owner)
     @name = name 
-    self.owner_name = owner
-    
+    self.owner = owner
+    self.owner.name = owner.name
   end
-  def owner_name=(name)
+  def owner=(name)
     self.owner = Owner.find_or_create_by_name(name)
     #owner.buy_cat(self)
     #artist.pets
