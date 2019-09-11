@@ -33,6 +33,7 @@ class Owner
       self.create(name)
   end
   def self.find(name)
+    self.detect{|owner| owner.name == name}
   end
   def self.create(name)
     owner = Owner.new(name)
